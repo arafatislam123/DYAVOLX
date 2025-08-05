@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add to resources/css/app.css */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 60px 30px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 22px;
+    color: #f0c808;
+    font-weight: bold;
+}
